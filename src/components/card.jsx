@@ -1,9 +1,18 @@
-const Card = ({ name, monthly, storage, users, send, learn }) => {
+const Card = ({
+  name,
+  monthly,
+  storage,
+  users,
+  send,
+  learn,
+  toggle,
+  annual,
+}) => {
   return (
     <>
-      <article>
+      <article className="flex flex-col">
         <span>{name}</span>
-        <span>{monthly}</span>
+        <span>{toggle ? annual : monthly}</span>
         <span>{storage}</span>
         <span>{users}</span>
         <span>{send}</span>
