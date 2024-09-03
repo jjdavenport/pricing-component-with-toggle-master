@@ -12,11 +12,11 @@ function App() {
 
   return (
     <>
-      <div className="font-custom text-customSize text- flex h-full min-h-screen flex-col justify-between">
-        <div className="flex flex-col items-center gap-4">
+      <div className="font-custom text-customSize bg-imageTop bg-colors-veryLightGrayishBlue bg-topRight flex h-full min-h-screen flex-col justify-between bg-no-repeat font-bold">
+        <div className="flex flex-1 flex-col items-center justify-center gap-10 p-4 py-10">
           <Header data={header} toggle={toggle} />
-          <main className="flex flex-col gap-4">
-            <ul className="flex flex-col gap-4">
+          <main className="flex h-full w-full flex-col items-center gap-4">
+            <ul className="flex h-full w-full flex-col justify-center gap-4 md:flex-row md:gap-0">
               {plans.map((i, index) => (
                 <li key={index}>
                   <Card
@@ -29,6 +29,7 @@ function App() {
                     send={i.send}
                     learn={i.learn}
                     gradient={i.gradient}
+                    dollar={i.dollar}
                   />
                 </li>
               ))}

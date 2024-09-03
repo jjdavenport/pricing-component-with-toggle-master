@@ -3,11 +3,18 @@ export default {
   content: ["./src/**/*.{html,js,jsx}", "./index.html"],
   theme: {
     extend: {
+      backgroundPosition: {
+        topRight: "top -4rem right -10rem",
+      },
       fontFamily: {
         custom: ["montserrat", "sans-serif"],
       },
       fontSize: {
-        customSize: "15px",
+        customSize: "0.9375rem",
+      },
+      backgroundImage: {
+        imageTop: "url('./images/bg-top.svg')",
+        imageBottom: "url('./images/bg-bottom.svg')",
       },
       colors: {
         colors: {
