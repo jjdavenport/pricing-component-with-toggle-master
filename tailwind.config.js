@@ -4,7 +4,8 @@ export default {
   theme: {
     extend: {
       backgroundPosition: {
-        topRight: "top -4rem right -10rem",
+        mobile: "top -4rem right -10rem",
+        desktop: "top right, bottom left",
       },
       fontFamily: {
         custom: ["montserrat", "sans-serif"],
@@ -13,8 +14,9 @@ export default {
         customSize: "0.9375rem",
       },
       backgroundImage: {
-        imageTop: "url('./images/bg-top.svg')",
-        imageBottom: "url('./images/bg-bottom.svg')",
+        imageMobile: "url('/images/bg-top.svg')",
+        imagesDesktop:
+          "url('/images/bg-top.svg'), url('/images/bg-bottom.svg')",
       },
       colors: {
         colors: {

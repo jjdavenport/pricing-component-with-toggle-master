@@ -14,7 +14,9 @@
       "users": "2 Users Allowed",
       "send": "Send up to 3 GB",
       "learn": "Learn More",
-      "gradient": false
+      "gradient": false,
+      "borderL": true,
+      "borderR": false
     },
     {
       "name": "Professional",
@@ -25,7 +27,9 @@
       "users": "5 Users Allowed",
       "send": "Send up to 10 GB",
       "learn": "Learn More",
-      "gradient": true
+      "gradient": true,
+      "borderL": true,
+      "borderR": true
     },
     {
       "name": "Master",
@@ -36,7 +40,9 @@
       "users": "10 Users Allowed",
       "send": "Send up to 20 GB",
       "learn": "Learn More",
-      "gradient": false
+      "gradient": false,
+      "borderL": false,
+      "borderR": true
     }
   ]
 }

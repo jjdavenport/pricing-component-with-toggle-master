@@ -12,13 +12,13 @@ function App() {
 
   return (
     <>
-      <div className="font-custom text-customSize bg-imageTop bg-colors-veryLightGrayishBlue bg-topRight flex h-full min-h-screen flex-col justify-between bg-no-repeat font-bold">
-        <div className="flex flex-1 flex-col items-center justify-center gap-10 p-4 py-10">
+      <div className="bg-mobile md:bg-desktop bg-imageMobile md:bg-imagesDesktop flex h-full min-h-screen flex-col justify-between bg-colors-veryLightGrayishBlue bg-no-repeat font-custom text-customSize">
+        <div className="flex flex-1 flex-col items-center justify-center gap-10 p-4 py-10 font-bold md:p-0">
           <Header data={header} toggle={toggle} />
-          <main className="flex h-full w-full flex-col items-center gap-4">
-            <ul className="flex h-full w-full flex-col justify-center gap-4 md:flex-row md:gap-0">
+          <main className="flex w-full flex-col items-center gap-4 md:w-max">
+            <ul className="flex w-full flex-col justify-center gap-4 md:w-max md:flex-1 md:flex-row md:items-center md:gap-0">
               {plans.map((i, index) => (
-                <li key={index}>
+                <li className="lg:flex lg:flex-1" key={index}>
                   <Card
                     annual={i.annual}
                     toggle={checked}
@@ -30,6 +30,8 @@ function App() {
                     learn={i.learn}
                     gradient={i.gradient}
                     dollar={i.dollar}
+                    borderL={i.borderL}
+                    borderR={i.borderR}
                   />
                 </li>
               ))}
